@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game {
+    background: #f4e2c1;
+    padding: 50px 0;
+}
+
+.game__heading {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.game__group {
+    padding: 25px 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.game__group:first-of-type {
+    margin-top: 50px;
+}
+
+.game__group + .game__group {
+    margin-top: 25px;
+}
+
+.game__group::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #1c1e21;
+}
+
+.game__title {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.game__img {
+    width: 800px;
+}
